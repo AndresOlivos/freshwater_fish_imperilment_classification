@@ -21,7 +21,7 @@ The project develops a global-scale, machine learning-based framework to predict
 
 ```
 .
-├── notebooks/                             # Python-based geospatial attribution workflows
+├── jupyter_notebooks/                     # Python-based geospatial attribution workflows
 ├── R_code/                                # R scripts (for trait data and Random Forest modeling)
 └── README.md                              # Project documentation
 ```
@@ -34,18 +34,18 @@ The project develops a global-scale, machine learning-based framework to predict
 
 Each Jupyter notebook summarizes one or more spatial datasets across freshwater fish species’ native ranges.
 
-| Notebook | Description |
-|----------|-------------|
-| `Pre-processing_IUCN_Ranges.ipynb` | Merges and filters native freshwater species range polygons from the IUCN Red List spatial database. |
-| `GDW_Attribution.ipynb` | Calculates impoundment metrics (e.g., number of dams, blocked discharge, reservoir area) from Global Dam Watch datasets. |
-| `GloRiC_Attribution.ipynb` | Computes hydro-geomorphic diversity, discharge, and stream power using the GloRiC global river classification dataset. |
+| Notebook | Description | Dependencies
+|----------|-------------|----------|
+| `Pre-processing_IUCN_Ranges.ipynb` | Merges and filters native freshwater species range polygons from the IUCN Red List spatial database. | ´arcpy´ |
+| `GDW_Attribution.ipynb` | Calculates impoundment metrics (e.g., number of dams, blocked discharge, reservoir area) from Global Dam Watch datasets. | |
+| `GloRiC_Attribution.ipynb` | Computes hydro-geomorphic diversity, discharge, and stream power using the GloRiC global river classification dataset. | |
 | `HumanFootprint_Attribution.ipynb` | Summarizes the Human Footprint Index (2009) over each species’ range. |
-| `HydroWASTE_Attribution.ipynb` | Quantifies the number and impact of wastewater treatment plants intersecting species ranges. |
-| `LandCover_Attribution.ipynb` | Computes proportional land cover types (forest, grassland, cropland, etc.) using Copernicus land cover rasters. |
-| `WorldClim_Attribution.ipynb` | Attributes 19 bioclimatic variables (e.g., precipitation seasonality, temperature extremes) from WorldClim v2.1. |
-| `WorldPop_Attribution.ipynb` | Derives population density trends (2000–2020) using WorldPop. |
-| `WorldBank_Attribution.ipynb` | Integrates national economic indicators (GDP trends, per capita change) from the World Bank WDI dataset. |
-| `WDPA_Attribution.ipynb` | Measures the overlap between species ranges and protected areas from the WDPA database, including Ramsar sites. |
+| `HydroWASTE_Attribution.ipynb` | Quantifies the number and impact of wastewater treatment plants intersecting species ranges. | |
+| `LandCover_Attribution.ipynb` | Computes proportional land cover types (forest, grassland, cropland, etc.) using Copernicus land cover rasters. | |
+| `WorldClim_Attribution.ipynb` | Attributes 19 bioclimatic variables (e.g., precipitation seasonality, temperature extremes) from WorldClim v2.1. | |
+| `WorldPop_Attribution.ipynb` | Derives population density trends (2000–2020) using WorldPop. | |
+| `WorldBank_Attribution.ipynb` | Integrates national economic indicators (GDP trends, per capita change) from the World Bank WDI dataset. | |
+| `WDPA_Attribution.ipynb` | Measures the overlap between species ranges and protected areas from the WDPA database, including Ramsar sites. | |
 
 ---
 
