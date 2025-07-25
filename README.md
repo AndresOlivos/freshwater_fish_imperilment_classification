@@ -22,8 +22,7 @@ The project develops a global-scale, machine learning-based framework to predict
 ```
 .
 ├── notebooks/                             # Python-based geospatial attribution workflows
-├── manuscript/                            # Manuscript and supplementary material
-├── R_code_pdfs/                           # PDF exports of R scripts (for trait data and modeling)
+├── R_code/                                # R scripts (for trait data and Random Forest modeling)
 └── README.md                              # Project documentation
 ```
 
@@ -31,7 +30,7 @@ The project develops a global-scale, machine learning-based framework to predict
 
 ## Data Attribution Workflows
 
-### 🐍 Python-Based Geospatial Attribution (Jupyter Notebooks)
+### Python-Based Geospatial Attribution
 
 Each Jupyter notebook summarizes one or more spatial datasets across freshwater fish species’ native ranges.
 
@@ -50,7 +49,7 @@ Each Jupyter notebook summarizes one or more spatial datasets across freshwater 
 
 ---
 
-### 🧬 R-Based Trait, Occurrence, and Threat Attribution
+### R-Based Species Traits, Occurrence, and IUCN Attribution
 
 The following R scripts (provided as PDFs) extract species-specific attributes from global biodiversity databases.
 
@@ -69,11 +68,12 @@ The following R scripts (provided as PDFs) extract species-specific attributes f
 
 Final conservation status predictions were produced using Random Forest models implemented in R. Key modeling steps included:
 
-- **Response variable**: Binary (Imperiled vs. Non-Imperiled) based on IUCN categories.
-- **Modeling tool**: `randomForest` package in R, tuned with `caret`.
-- **Imputation**: Missing values imputed using `na.roughfix`.
-- **Weighting**: Classes weighted (3:1) to address imbalance between imperiled and non-imperiled species.
-- **Evaluation**:
+- **Response variables**: Ordinal (LC>NT>VU>EN>CR) and Binary (Imperiled vs. Non-Imperiled)
+- **Predictive variables**: 50+ environmental, socioeconomic, and intrinsic species variables
+- **Imputation**: Missing values imputed using `na.roughfix`
+- **Modeling tools**: 'party' and `randomForest` packages in R, called through `caret` for tuning
+- **Weighting**: Binary classes weighted (3:1) to address imbalance between imperiled and non-imperiled species.
+- **Classification accuracy**:
   - Overall accuracy: **88%**
   - Non-imperiled accuracy: **90.1%**
   - Imperiled accuracy: **81.2%**
