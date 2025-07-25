@@ -161,7 +161,3 @@ For questions, modeling scripts, or collaboration inquiries:
   Department of Fisheries, Wildlife, and Conservation Sciences  
   Oregon State University  
   📧 andres.olivos@oregonstate.edu
-
-- **Christina A. Murphy**  
-  U.S. Geological Survey / University of Maine  
-  📧 christina.murphy@maine.edu
