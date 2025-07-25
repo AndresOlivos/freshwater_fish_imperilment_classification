@@ -68,12 +68,23 @@ The following R scripts (provided as PDFs) extract species-specific attributes f
 
 Final conservation status predictions were produced using Random Forest models implemented in R. Key modeling steps included:
 
-- **Response variables**: Ordinal (LC>NT>VU>EN>CR) and Binary (Imperiled vs. Non-Imperiled)
-- **Predictive variables**: 50+ environmental, socioeconomic, and intrinsic species variables
-- **Imputation**: Missing values imputed using `na.roughfix`
-- **Modeling tools**: 'party' and `randomForest` packages in R, called through `caret` for tuning
+- **Response variables**: Ordinal (LC>NT>VU>EN>CR) and Binary (Imperiled vs. Non-Imperiled).
+- **Predictive variables**: 50+ environmental, socioeconomic, and intrinsic species variables.
+- **Imputation**: Missing values imputed using `na.roughfix`.
+- **Training/test split**: 80% training / 20% hold-out test.
+- **Modeling tools**: `party` and `randomForest` packages in R, called through `caret` for `mtry` tuning.
+- **Evaluation metrics**: macro-averaged mean absolute error, Precision-Recall AUC, F1, among others.
 - **Weighting**: Binary classes weighted (3:1) to address imbalance between imperiled and non-imperiled species.
-- **Classification accuracy**:
+
+- **Classification accuracy**: Ordinal Random Forest
+  - Overall accuracy: **73.7%**
+  - LC: **71%**
+  - NT: **50.4%**
+  - VU: **56.2%**
+  - EN: **69.7%**
+  - CR: **60%**
+
+- **Classification accuracy**: Binary Categorical Random Forest
   - Overall accuracy: **88%**
   - Non-imperiled accuracy: **90.1%**
   - Imperiled accuracy: **81.2%**
