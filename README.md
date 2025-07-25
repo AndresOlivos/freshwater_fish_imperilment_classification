@@ -91,7 +91,7 @@ Final conservation status predictions were produced using Random Forest models i
 
 | Script | Description |
 |--------|-------------|
-| `Random_Forests_PDPs.R` (`Random_Forests_PDPs.pdf`) | Trains and evaluates the Random Forest model; generates confusion matrices and partial dependence plots to visualize predictor effects on conservation status. |
+| `Random_Forests.R` | Trains and evaluates the Random Forest model; generates confusion matrices and partial dependence plots to visualize predictor effects on conservation status. |
 
 ---
 
@@ -131,7 +131,7 @@ Modeling and dataset integration were executed in R 4.2+ using RStudio.
 
 2. Run the Jupyter notebooks in the `/notebooks/` directory sequentially to reproduce spatial attribution.
 
-3. Refer to the R script PDFs in `R_code_pdfs/` for data integration, trait assignment, and modeling workflows.
+3. Refer to the R script PDFs in `R_code/` for data integration, trait assignment, and modeling workflows.
 
 ---
 
