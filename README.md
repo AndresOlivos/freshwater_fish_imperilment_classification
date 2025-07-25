@@ -64,7 +64,7 @@ The following R scripts (provided as PDFs) extract species-specific attributes f
 
 ## Modeling Framework
 
-### 🧠 Random Forest Classification Model (R)
+### Random Forest Classification Model (R)
 
 Final conservation status predictions were produced using Random Forest models implemented in R. Key modeling steps included:
 
