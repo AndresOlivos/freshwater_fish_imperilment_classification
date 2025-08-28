@@ -14,7 +14,7 @@ The project develops a global-scale, machine learning-based framework to predict
 - Attribute 50+ predictor variables to the ranges of 10,000+ freshwater fish species worldwide using open-access global datasets.
 - Identify key ecological and socioeconomic correlates of IUCN conservation status—specifically, non-imperilment.
 - Implement a reproducible Random Forest classification model to assess species vulnerability.
-- Assess predictive performance on a holdout validation dataset of 20%.
+- Assess predictive performance on a holdout validation dataset of 20% of the species.
 
 ---
 
