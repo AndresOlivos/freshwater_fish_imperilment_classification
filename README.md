@@ -12,8 +12,8 @@ The project develops a global-scale, machine learning-based framework to predict
 ## Objectives
 
 - Attribute 50+ predictor variables to the ranges of 10,000+ freshwater fish species worldwide using open-access global datasets.
-- Identify key ecological and socioeconomic correlates of IUCN conservation status—specifically, non-imperilment.
-- Implement a reproducible Random Forest classification model to assess species vulnerability.
+- Identify key ecological and socioeconomic correlates of IUCN conservation status.
+- Implement a reproducible Random Forest classification model to assess species imperilment.
 - Assess predictive performance on a holdout validation dataset of 20% of the species.
 
 ---
@@ -56,10 +56,10 @@ The following R scripts (provided as PDFs) extract species-specific attributes f
 
 | Script | Description |
 |--------|-------------|
-| `IUCN_Attribution.R` (`IUCN_Attribution.pdf`) | Extracts taxonomic classification, threat categories, population trends, and habitat types using the IUCN API and spatial range data. |
-| `FishBase_Attribution.R` (`FishBase_Attribution.pdf`) | Retrieves physiological, life-history, ecological, and use-related traits (e.g., trophic level, pH range, salinity, longevity, commercial use) from FishBase via the `rfishbase` package. |
-| `GBIF_Attribution.R` (`GBIF_Attribution.pdf`) | Downloads and filters GBIF occurrence records; computes elevation statistics (mean, min, max) for each species. |
-| `Dataset_Preparation.R` (`Dataset_Preparation.pdf`) | Merges all predictor variables into a final modeling dataset; standardizes and range-corrects spatial variables; handles missing values and correlation filtering. |
+| `IUCN_Attribution.R` | Extracts taxonomic classification, threat categories, population trends, and habitat types using the IUCN API and spatial range data. |
+| `FishBase_Attribution.R` | Retrieves physiological, life-history, ecological, and use-related traits (e.g., trophic level, pH range, salinity, longevity, commercial use) from FishBase via the `rfishbase` package. |
+| `GBIF_Attribution.R` | Downloads and filters GBIF occurrence records; computes elevation statistics (mean, min, max) for each species. |
+| `Dataset_Preparation.R` | Merges all predictor variables into a final modeling dataset; standardizes and range-corrects spatial variables; handles missing values and correlation filtering. |
 
 ---
 
