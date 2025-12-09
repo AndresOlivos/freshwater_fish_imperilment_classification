@@ -3,7 +3,7 @@
 ### Integrating Environmental, Taxonomic, and Socioeconomic Drivers
 
 This repository supports the research article:  
-**Murphy, C.A., Olivos, J.A., et al. (2025). _Environment, Taxonomy, and Socioeconomics Predict Non-Imperilment in Freshwater Fishes_** (in review).
+**Murphy, C.A., Olivos, J.A., et al. (2025). _Environment, Taxonomy, and Socioeconomics Predict Non-Imperilment in Freshwater Fishes_** (in press).
 
 The project develops a global-scale, machine learning-based framework to predict the conservation status of freshwater fish species based on extrinsic environmental conditions, anthropogenic pressures, and intrinsic biological characteristics. It includes workflows for spatial data attribution, species trait compilation, and Random Forest classification modeling.
 
